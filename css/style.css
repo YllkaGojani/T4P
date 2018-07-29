@@ -48,6 +48,8 @@
 1. General
 ==================================== */
 
+/* main color = #177100 */
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
@@ -251,9 +253,16 @@ header .logo {
 
 header .logo img {
   margin-bottom: 10px;
+  max-width: 25%;
+  padding-right:20px;
 }
 
 header .logo h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+header .logo h2 {
   font-size: 14px;
   margin: 0;
 }
@@ -857,7 +866,7 @@ ul.breadcrumb li a:hover {
 }
 
 #sendmessage.show, #errormessage.show, .show {
-	display:block;
+  display:block;
 }
 
 /* Google Map */
@@ -1922,7 +1931,6 @@ ul.time-post li.time {
 ================================ */
 
 footer {
-  background: #111;
   padding: 50px 0 0 0;
   color: #bbb;
 }
@@ -2715,3 +2723,25 @@ article img.pull-right, article .align-right {
 }
 
 /* Theme Styler :: End */
+
+.uppercase{text-transform: uppercase;}
+
+.radio-inline {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#map{
+  height: 500px; 
+  margin-bottom: 30px;
+}
+
+.bg-green{background-color: #177100;}
+.bg-white{background-color: white;}
+.txt-green{color: #177100;}
+.txt-white{color: white;}
