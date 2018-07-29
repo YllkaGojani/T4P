@@ -108,42 +108,6 @@
     <section>
       <canvas id="myChart"></canvas>
     </section>
-      <script>
-      var ctx = document.getElementById("myChart").getContext('2d');
-      var myChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ["2013", "2014", "2015", "2016", "2017", "2018"],
-              datasets: [{
-                  label: 'Percentage of minor age users of CIGARS ',
-                  data: [43.5, 32.1, 35, 39.4, 45.2, 47.3],
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(255, 206, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(255, 159, 64, 0.2)'
-                  ],
-                  borderColor: [
-                      'rgba(255,99,132,1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 159, 64, 1)'
-                  ],
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                position: 'top',
-              }
-            }
-      });
-      </script>
    <footer>
       <div id="sub-footer">
         <div class="container">
@@ -184,11 +148,6 @@
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/jquery.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('#myChart').width(400);
-    })
-  </script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
@@ -204,7 +163,48 @@
   <script src="js/jquery.slitslider.js"></script>
   <script src="js/animate.js"></script>
 
+    <script>
+      var ctx = document.getElementById("myChart").getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ["2013", "2014", "2015", "2016", "2017", "2018"],
+              datasets: [{
+                  label: 'Percentage of minor age users of CIGARS ',
+                  data: [43.5, 32.1, 35, 39.4, 45.2, 47.3],
+                  backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                      'rgba(255,99,132,1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                position: 'top',
+              }
+            }
+      });
+    </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#myChart').width(400);
+    })
+  </script>
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
 
