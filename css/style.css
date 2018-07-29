@@ -2745,3 +2745,6 @@ article img.pull-right, article .align-right {
 .bg-white{background-color: white;}
 .txt-green{color: #177100;}
 .txt-white{color: white;}
+
+#inner-headline .inner-heading button {margin: 35px 0 0 0;}
+.mce-notification.mce-in{opacity: 0!important;}
